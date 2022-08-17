@@ -117,7 +117,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="15%" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wPU-Q7-p23">
-                                <rect key="frame" x="61" y="392" width="99" height="56"/>
+                                <rect key="frame" x="61" y="402" width="99" height="56"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" name="ArialRoundedMTBold" family="Arial Rounded MT Bold" pointSize="48"/>
                                 <nil key="textColor"/>
@@ -145,16 +145,21 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MVY-jA-xKw">
-                                <rect key="frame" x="22" y="806" width="70" height="39"/>
+                                <rect key="frame" x="32" y="810" width="70" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="back ">
-                                    <fontDescription key="titleFontDescription" type="system" pointSize="19"/>
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="21"/>
+                                    <color key="baseForegroundColor" systemColor="systemTealColor"/>
                                 </buttonConfiguration>
                                 <connections>
                                     <segue destination="BYZ-38-t0r" kind="show" id="rQP-Dw-Dlt"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Image" translatesAutoresizingMaskIntoConstraints="NO" id="agH-xK-J6f">
+                                <rect key="frame" x="320" y="12" width="94" height="49"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="WqE-pN-AY6"/>
                         <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -167,11 +172,15 @@
         </scene>
     </scenes>
     <resources>
+        <image name="Image" width="300" height="281"/>
         <image name="Screen Shot 2022-08-17 at 8.17.10 AM" width="1093" height="297"/>
         <image name="Screen Shot 2022-08-17 at 8.24.56 AM" width="914" height="684"/>
         <image name="Screen Shot 2022-08-17 at 8.26.24 AM" width="442" height="504"/>
         <image name="Screen Shot 2022-08-17 at 8.26.46 AM" width="230" height="998"/>
         <image name="Screen Shot 2022-08-17 at 8.29.29 AM" width="500" height="294"/>
         <image name="Screen Shot 2022-08-17 at 8.29.49 AM" width="574" height="98"/>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>
