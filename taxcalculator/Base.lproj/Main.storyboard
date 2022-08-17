@@ -42,18 +42,23 @@
                                 <rect key="frame" x="184" y="768" width="240" height="128"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cmj-Wp-Y9S">
-                                <rect key="frame" x="121" y="313" width="167" height="32"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-17 at 8.29.49 AM" translatesAutoresizingMaskIntoConstraints="NO" id="vUt-xK-xBm">
+                                <rect key="frame" x="116" y="632" width="182" height="52"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <attributedString key="attributedText">
-                                    <fragment content="Enter the total: ">
-                                        <attributes>
-                                            <font key="NSFont" metaFont="system" size="26"/>
-                                        </attributes>
-                                    </fragment>
-                                </attributedString>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l6V-PS-tOg">
+                                <rect key="frame" x="116" y="632" width="182" height="52"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title=" "/>
+                                <connections>
+                                    <segue destination="tOC-ZT-B2N" kind="show" id="K6d-b3-g0z"/>
+                                </connections>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-17 at 8.25.25 AM" translatesAutoresizingMaskIntoConstraints="NO" id="qXQ-qB-tfZ">
+                                <rect key="frame" x="108" y="310" width="198" height="62"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" red="0.96078431610000004" green="0.97647058959999999" blue="0.99607843159999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
@@ -68,7 +73,7 @@
             <objects>
                 <viewController id="tOC-ZT-B2N" customClass="SecondViewController" customModule="taxcalculator" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Pyh-v8-ecS">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Screen Shot 2022-08-17 at 8.24.56 AM" translatesAutoresizingMaskIntoConstraints="NO" id="0bp-fM-xLR">
@@ -109,6 +114,7 @@
                         <viewLayoutGuide key="safeArea" id="WqE-pN-AY6"/>
                         <color key="backgroundColor" red="0.96078431610000004" green="0.98039215800000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </view>
+                    <navigationItem key="navigationItem" id="OVG-Vm-4h2"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ZRh-DP-hB6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -118,8 +124,10 @@
     <resources>
         <image name="Screen Shot 2022-08-17 at 8.17.10 AM" width="1093" height="297"/>
         <image name="Screen Shot 2022-08-17 at 8.24.56 AM" width="914" height="684"/>
+        <image name="Screen Shot 2022-08-17 at 8.25.25 AM" width="1124" height="252"/>
         <image name="Screen Shot 2022-08-17 at 8.26.24 AM" width="442" height="504"/>
         <image name="Screen Shot 2022-08-17 at 8.26.46 AM" width="230" height="998"/>
         <image name="Screen Shot 2022-08-17 at 8.29.29 AM" width="500" height="294"/>
+        <image name="Screen Shot 2022-08-17 at 8.29.49 AM" width="574" height="98"/>
     </resources>
 </document>
