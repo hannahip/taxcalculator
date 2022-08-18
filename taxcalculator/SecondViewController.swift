@@ -9,11 +9,17 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    var initialAmount : String = ""
+    
+    @IBOutlet weak var initialAmountLabel: UILabel!
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-
+        
+        initialAmountLabel.text = "$\(initialAmount)"
     }
+    
     
 
     /*

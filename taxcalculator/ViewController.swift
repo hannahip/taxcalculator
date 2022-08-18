@@ -9,17 +9,27 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    @IBOutlet weak var textField: UITextField!
-    var enteredScore = 0
-
+ 
+    @IBOutlet weak var enteredAmount: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        let destinationVC = segue.destination as! SecondViewController
+    
+    @IBAction func suggestedTipPressed(_ sender: UIButton) {
         
-        destinationVC.enteredScore = self.enteredScore
+        performSegue(withIdentifier: "suggestedTipSegue", sender: self)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "suggestedTipSegue" {
+            let destinationVC = segue.destination as? SecondViewController
+            if let initialAmount = enteredAmount.text {
+                destinationVC?.initialAmount = initialAmount
+            }
+        }
     }
 
 }
