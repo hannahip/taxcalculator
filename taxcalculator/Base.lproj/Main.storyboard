@@ -93,6 +93,9 @@
                         </accessibility>
                     </view>
                     <navigationItem key="navigationItem" id="ytJ-pU-Ape"/>
+                    <connections>
+                        <outlet property="textField" destination="iUB-8G-aFm" id="A9y-3D-wAH"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
                 <exit id="zRM-Fv-qEb" userLabel="Exit" sceneMemberID="exit"/>
