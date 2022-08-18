@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		00453B5828AD37CF006E380C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00453B5728AD37CF006E380C /* SecondViewController.swift */; };
+		00453B5E28AE8DA1006E380C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00453B5D28AE8DA0006E380C /* ThirdViewController.swift */; };
 		BBC93FDB28AC1AB200940CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC93FDA28AC1AB200940CDD /* AppDelegate.swift */; };
 		BBC93FDD28AC1AB200940CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC93FDC28AC1AB200940CDD /* SceneDelegate.swift */; };
 		BBC93FDF28AC1AB200940CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC93FDE28AC1AB200940CDD /* ViewController.swift */; };
@@ -19,6 +20,7 @@
 
 /* Begin PBXFileReference section */
 		00453B5728AD37CF006E380C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		00453B5D28AE8DA0006E380C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
 		BBC93FD728AC1AB200940CDD /* taxcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taxcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC93FDA28AC1AB200940CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC93FDC28AC1AB200940CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -64,6 +66,7 @@
 				BBC93FDC28AC1AB200940CDD /* SceneDelegate.swift */,
 				BBC93FDE28AC1AB200940CDD /* ViewController.swift */,
 				00453B5728AD37CF006E380C /* SecondViewController.swift */,
+				00453B5D28AE8DA0006E380C /* ThirdViewController.swift */,
 				BBC93FE028AC1AB200940CDD /* Main.storyboard */,
 				BBC93FE628AC1AB400940CDD /* Assets.xcassets */,
 				BBC93FE828AC1AB400940CDD /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 				BBC93FE528AC1AB200940CDD /* taxcalculator.xcdatamodeld in Sources */,
 				BBC93FDB28AC1AB200940CDD /* AppDelegate.swift in Sources */,
 				00453B5828AD37CF006E380C /* SecondViewController.swift in Sources */,
+				00453B5E28AE8DA1006E380C /* ThirdViewController.swift in Sources */,
 				BBC93FDD28AC1AB200940CDD /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

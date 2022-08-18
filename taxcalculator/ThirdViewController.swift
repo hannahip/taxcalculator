@@ -1,18 +1,18 @@
 //
-//  SecondViewController.swift
+//  ThirdViewController.swift
 //  taxcalculator
 //
-//  Created by Lydia Kang on 8/17/22.
+//  Created by Lydia Kang on 8/18/22.
 //
 
 import UIKit
 
-class SecondViewController: UIViewController {
+class ThirdViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-
+        // Do any additional setup after loading the view.
     }
     
 
