@@ -13,11 +13,17 @@ class SecondViewController: UIViewController {
     
     @IBOutlet weak var initialAmountLabel: UILabel!
     
+    @IBOutlet weak var tenPercent: UILabel!
+    
+        let doubleAmount = Double(initialAmount) ?? 0
+
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         initialAmountLabel.text = "$\(initialAmount)"
+        
     }
     
     
