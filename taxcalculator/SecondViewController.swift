@@ -37,23 +37,23 @@ class SecondViewController: UIViewController {
         
         let ten = Double(round(1000 * (doubleAmount * 0.1)) / 1000)
         tenTotal = doubleAmount * 1.1
-        tenPercent.text = "10% tip: $\(ten)\nTotal price: \(tenTotal)"
+        tenPercent.text = "10% tip: $\(ten)\nTotal price: $\(tenTotal)"
         
         let fifteen = Double(round(1000 * (doubleAmount * 0.15)) / 1000)
         fifteenTotal = doubleAmount * 1.15
-        fifteenPercent.text = "15% tip: $\(fifteen)\nTotal price: \(fifteenTotal)"
+        fifteenPercent.text = "15% tip: $\(fifteen)\nTotal price: $\(fifteenTotal)"
         
         let eighteen = Double(round(1000 * (doubleAmount * 0.18)) / 1000)
         eighteenTotal = doubleAmount * 1.18
-        eighteenPercent.text = "18% tip: $\(eighteen)\nTotal price: \(eighteenTotal)"
+        eighteenPercent.text = "18% tip: $\(eighteen)\nTotal price: $\(eighteenTotal)"
         
         let twenty = Double(round(1000 * (doubleAmount * 0.2)) / 1000)
         twentyTotal = doubleAmount * 1.2
-        twentyPercent.text = "20% tip: $\(twenty)\nTotal price: \(twentyTotal)"
+        twentyPercent.text = "20% tip: $\(twenty)\nTotal price: $\(twentyTotal)"
         
         let twentyfive = Double(round(1000 * (doubleAmount * 0.25)) / 1000)
         twentyfiveTotal = doubleAmount * 1.25
-        twentyFivePercent.text = "25% tip: $\(twentyfive)\nTotal price: \(twentyfiveTotal)"
+        twentyFivePercent.text = "25% tip: $\(twentyfive)\nTotal price: $\(twentyfiveTotal)"
         
     }
     
