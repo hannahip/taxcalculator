@@ -33,26 +33,26 @@ class SecondViewController: UIViewController {
         let double = (initialAmount as NSString).doubleValue
         
         // minimizes decimal places
-        let doubleAmount = Double(round(1000 * double) / 1000)
+        let doubleAmount = Double(round(100 * double) / 100)
         
-        let ten = Double(round(1000 * (doubleAmount * 0.1)) / 1000)
-        tenTotal = doubleAmount * 1.1
+        let ten = Double(round(100 * (doubleAmount * 0.1)) / 100)
+        tenTotal = Double(round(100 * (doubleAmount * 1.1)) / 100)
         tenPercent.text = "10% tip: $\(ten)\nTotal price: $\(tenTotal)"
         
-        let fifteen = Double(round(1000 * (doubleAmount * 0.15)) / 1000)
-        fifteenTotal = doubleAmount * 1.15
+        let fifteen = Double(round(100 * (doubleAmount * 0.15)) / 100)
+        fifteenTotal = Double(round(100 * (doubleAmount * 1.15)) / 100)
         fifteenPercent.text = "15% tip: $\(fifteen)\nTotal price: $\(fifteenTotal)"
         
-        let eighteen = Double(round(1000 * (doubleAmount * 0.18)) / 1000)
-        eighteenTotal = doubleAmount * 1.18
+        let eighteen = Double(round(100 * (doubleAmount * 0.18)) / 100)
+        eighteenTotal = Double(round(100 * (doubleAmount * 1.18)) / 100)
         eighteenPercent.text = "18% tip: $\(eighteen)\nTotal price: $\(eighteenTotal)"
         
-        let twenty = Double(round(1000 * (doubleAmount * 0.2)) / 1000)
-        twentyTotal = doubleAmount * 1.2
+        let twenty = Double(round(100 * (doubleAmount * 0.2)) / 100)
+        twentyTotal = Double(round(100 * (doubleAmount * 1.2)) / 100)
         twentyPercent.text = "20% tip: $\(twenty)\nTotal price: $\(twentyTotal)"
         
-        let twentyfive = Double(round(1000 * (doubleAmount * 0.25)) / 1000)
-        twentyfiveTotal = doubleAmount * 1.25
+        let twentyfive = Double(round(100 * (doubleAmount * 0.25)) / 100)
+        twentyfiveTotal = Double(round(100 * (doubleAmount * 1.25)) / 100)
         twentyFivePercent.text = "25% tip: $\(twentyfive)\nTotal price: $\(twentyfiveTotal)"
         
     }

@@ -34,7 +34,7 @@ class ThirdViewController: UIViewController {
             
             let igiveup = (1 + (percent / 100)) * double
             
-            percentage = Double(round(1000 * (igiveup)) / 1000)
+            percentage = Double(round(100 * (igiveup)) / 100)
         
             totalAmountLabel.text = "$\(percentage)"
         }

@@ -23,7 +23,7 @@ class FourthViewController: UIViewController {
             
             let numPeeps = (numberP as NSString).doubleValue
             
-            let calc = Double(round(1000 * (double / numPeeps)) / 1000)
+            let calc = Double(round(100 * (double / numPeeps)) / 100)
             
             perPerson.text = "$\(calc)"
         }
