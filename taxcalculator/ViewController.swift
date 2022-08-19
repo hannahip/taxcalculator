@@ -12,9 +12,13 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var enteredAmount: UITextField!
     
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        let textField = UITextField()
+        textField.keyboardType = .numberPad
     }
     
     @IBAction func suggestedTipPressed(_ sender: UIButton) {
