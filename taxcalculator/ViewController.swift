@@ -27,6 +27,11 @@ class ViewController: UIViewController {
         
     }
     
+    @IBAction func customTipPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "customTipSegue", sender: self)
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "suggestedTipSegue" {
             let destinationVC = segue.destination as? SecondViewController
@@ -34,7 +39,15 @@ class ViewController: UIViewController {
                 destinationVC?.initialAmount = initialAmount
             }
         }
+        
+        if segue.identifier == "customTipSegue" {
+            let destinationVC = segue.destination as? ThirdViewController
+            if let initialAmount = enteredAmount.text {
+                destinationVC?.initialAmount = initialAmount
+            }
+        }
     }
+    
 
 }
 

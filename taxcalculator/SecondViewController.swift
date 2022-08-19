@@ -26,31 +26,45 @@ class SecondViewController: UIViewController {
         initialAmountLabel.text = "$\(initialAmount)"
         
         let double = (initialAmount as NSString).doubleValue
-        // keeps the decimal place at 3 or less
+        
+        // minimizes decimal places
         let doubleAmount = Double(round(1000 * double) / 1000)
         
-        let ten = doubleAmount * 0.1
+        let ten = Double(round(1000 * (doubleAmount * 0.1)) / 1000)
         let tenTotal = doubleAmount * 1.1
         tenPercent.text = "10% tip: $\(ten)\nTotal price: \(tenTotal)"
         
-        let fifteen = doubleAmount * 0.15
+        let fifteen = Double(round(1000 * (doubleAmount * 0.15)) / 1000)
         let fifteenTotal = doubleAmount * 1.15
         fifteenPercent.text = "15% tip: $\(fifteen)\nTotal price: \(fifteenTotal)"
         
-        let eighteen = doubleAmount * 0.18
+        let eighteen = Double(round(1000 * (doubleAmount * 0.18)) / 1000)
         let eighteenTotal = doubleAmount * 1.18
         eighteenPercent.text = "18% tip: $\(eighteen)\nTotal price: \(eighteenTotal)"
         
-        let twenty = doubleAmount * 0.2
+        let twenty = Double(round(1000 * (doubleAmount * 0.2)) / 1000)
         let twentyTotal = doubleAmount * 1.2
         twentyPercent.text = "20% tip: $\(twenty)\nTotal price: \(twentyTotal)"
         
-        let twentyfive = doubleAmount * 0.25
+        let twentyfive = Double(round(1000 * (doubleAmount * 0.25)) / 1000)
         let twentyfiveTotal = doubleAmount * 1.25
         twentyFivePercent.text = "25% tip: $\(twentyfive)\nTotal price: \(twentyfiveTotal)"
         
     }
     
+    
+    @IBAction func otherButtonPressed(_ sender: UIButton) {
+        performSegue(withIdentifier: "secondToThird", sender: self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "secondToThird" {
+            let destinationVC = segue.destination as? ThirdViewController
+
+                destinationVC?.initialAmount = initialAmount
+            
+        }
+    }
     
 
     /*
