@@ -10,6 +10,7 @@ import UIKit
 class ThirdViewController: UIViewController {
     
     var initialAmount : String = ""
+    var percentage : Double = 0.0
     
     @IBOutlet weak var initialAmountLab: UILabel!
     @IBOutlet weak var tipPercentage: UITextField!
@@ -31,13 +32,26 @@ class ThirdViewController: UIViewController {
             
             let percent = (tipPercent as NSString).doubleValue
             
-            let igiveup = percent / 100
+            let igiveup = (1 + (percent / 100)) * double
             
-            let percentage = Double(round(1000 * ((1 + igiveup) * double)) / 1000)
+            percentage = Double(round(1000 * (igiveup)) / 1000)
         
             totalAmountLabel.text = "$\(percentage)"
         }
         
+    }
+    
+    @IBAction func splitButton(_ sender: UIButton) {
+        performSegue(withIdentifier: "thirdToFourth", sender: self)
+    }
+    
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "thirdToFourth" {
+            let destinationVC = segue.destination as? FourthViewController
+            
+                destinationVC?.totalAmount = String(percentage)
+        }
     }
     
         

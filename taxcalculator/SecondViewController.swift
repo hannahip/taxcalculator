@@ -10,6 +10,11 @@ import UIKit
 class SecondViewController: UIViewController {
 
     var initialAmount : String = ""
+    var tenTotal : Double = 0.0
+    var fifteenTotal : Double = 0.0
+    var eighteenTotal : Double = 0.0
+    var twentyTotal : Double = 0.0
+    var twentyfiveTotal : Double = 0.0
     
     @IBOutlet weak var initialAmountLabel: UILabel!
     
@@ -31,23 +36,23 @@ class SecondViewController: UIViewController {
         let doubleAmount = Double(round(1000 * double) / 1000)
         
         let ten = Double(round(1000 * (doubleAmount * 0.1)) / 1000)
-        let tenTotal = doubleAmount * 1.1
+        tenTotal = doubleAmount * 1.1
         tenPercent.text = "10% tip: $\(ten)\nTotal price: \(tenTotal)"
         
         let fifteen = Double(round(1000 * (doubleAmount * 0.15)) / 1000)
-        let fifteenTotal = doubleAmount * 1.15
+        fifteenTotal = doubleAmount * 1.15
         fifteenPercent.text = "15% tip: $\(fifteen)\nTotal price: \(fifteenTotal)"
         
         let eighteen = Double(round(1000 * (doubleAmount * 0.18)) / 1000)
-        let eighteenTotal = doubleAmount * 1.18
+        eighteenTotal = doubleAmount * 1.18
         eighteenPercent.text = "18% tip: $\(eighteen)\nTotal price: \(eighteenTotal)"
         
         let twenty = Double(round(1000 * (doubleAmount * 0.2)) / 1000)
-        let twentyTotal = doubleAmount * 1.2
+        twentyTotal = doubleAmount * 1.2
         twentyPercent.text = "20% tip: $\(twenty)\nTotal price: \(twentyTotal)"
         
         let twentyfive = Double(round(1000 * (doubleAmount * 0.25)) / 1000)
-        let twentyfiveTotal = doubleAmount * 1.25
+        twentyfiveTotal = doubleAmount * 1.25
         twentyFivePercent.text = "25% tip: $\(twentyfive)\nTotal price: \(twentyfiveTotal)"
         
     }
@@ -57,16 +62,65 @@ class SecondViewController: UIViewController {
         performSegue(withIdentifier: "secondToThird", sender: self)
     }
     
+    @IBAction func tenPercentSplit(_ sender: UIButton) {
+        performSegue(withIdentifier: "tenPercentSplit", sender: self)
+    }
+    
+    @IBAction func fifteenPercentSplit(_ sender: UIButton) {
+        performSegue(withIdentifier: "fifteenPercentSplit", sender: self)
+    }
+    
+    @IBAction func eighteenPercentSplit(_ sender: UIButton) {
+        performSegue(withIdentifier: "eighteenPercentSplit", sender: self)
+    }
+    
+    @IBAction func twentyPercentSplit(_ sender: UIButton) {
+        performSegue(withIdentifier: "twentyPercentSplit", sender: self)
+    }
+    
+    @IBAction func twentyFivePercentSplit(_ sender: UIButton) {
+        performSegue(withIdentifier: "twentyFivePercentSplit", sender: self)
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "secondToThird" {
             let destinationVC = segue.destination as? ThirdViewController
 
                 destinationVC?.initialAmount = initialAmount
-            
         }
-    }
-    
+        
+        if segue.identifier == "tenPercentSplit" {
+            let destinationVC = segue.destination as? FourthViewController
 
+                destinationVC?.totalAmount = String(tenTotal)
+        }
+        
+        if segue.identifier == "fifteenPercentSplit" {
+            let destinationVC = segue.destination as? FourthViewController
+
+                destinationVC?.totalAmount = String(fifteenTotal)
+        }
+        
+        if segue.identifier == "eighteenPercentSplit" {
+            let destinationVC = segue.destination as? FourthViewController
+
+                destinationVC?.totalAmount = String(eighteenTotal)
+        }
+        
+        if segue.identifier == "twentyPercentSplit" {
+            let destinationVC = segue.destination as? FourthViewController
+
+                destinationVC?.totalAmount = String(twentyTotal)
+        }
+        
+        if segue.identifier == "twentyFivePercentSplit" {
+            let destinationVC = segue.destination as? FourthViewController
+
+                destinationVC?.totalAmount = String(twentyfiveTotal)
+        }
+        
+}
     /*
     // MARK: - Navigation
 
@@ -78,3 +132,4 @@ class SecondViewController: UIViewController {
     */
 
 }
+

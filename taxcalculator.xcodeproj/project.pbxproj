@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		00453B5828AD37CF006E380C /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00453B5728AD37CF006E380C /* SecondViewController.swift */; };
 		00453B5E28AE8DA1006E380C /* ThirdViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00453B5D28AE8DA0006E380C /* ThirdViewController.swift */; };
+		BBADB18D28AF5175002921FB /* FourthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBADB18C28AF5175002921FB /* FourthViewController.swift */; };
 		BBC93FDB28AC1AB200940CDD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC93FDA28AC1AB200940CDD /* AppDelegate.swift */; };
 		BBC93FDD28AC1AB200940CDD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC93FDC28AC1AB200940CDD /* SceneDelegate.swift */; };
 		BBC93FDF28AC1AB200940CDD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBC93FDE28AC1AB200940CDD /* ViewController.swift */; };
@@ -21,6 +22,7 @@
 /* Begin PBXFileReference section */
 		00453B5728AD37CF006E380C /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 		00453B5D28AE8DA0006E380C /* ThirdViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThirdViewController.swift; sourceTree = "<group>"; };
+		BBADB18C28AF5175002921FB /* FourthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FourthViewController.swift; sourceTree = "<group>"; };
 		BBC93FD728AC1AB200940CDD /* taxcalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = taxcalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BBC93FDA28AC1AB200940CDD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BBC93FDC28AC1AB200940CDD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -46,6 +48,7 @@
 		BBC93FCE28AC1AB200940CDD = {
 			isa = PBXGroup;
 			children = (
+				BBADB18C28AF5175002921FB /* FourthViewController.swift */,
 				BBC93FD928AC1AB200940CDD /* taxcalculator */,
 				BBC93FD828AC1AB200940CDD /* Products */,
 			);
@@ -150,6 +153,7 @@
 				BBC93FDF28AC1AB200940CDD /* ViewController.swift in Sources */,
 				BBC93FE528AC1AB200940CDD /* taxcalculator.xcdatamodeld in Sources */,
 				BBC93FDB28AC1AB200940CDD /* AppDelegate.swift in Sources */,
+				BBADB18D28AF5175002921FB /* FourthViewController.swift in Sources */,
 				00453B5828AD37CF006E380C /* SecondViewController.swift in Sources */,
 				00453B5E28AE8DA1006E380C /* ThirdViewController.swift in Sources */,
 				BBC93FDD28AC1AB200940CDD /* SceneDelegate.swift in Sources */,
