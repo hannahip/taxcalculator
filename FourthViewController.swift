@@ -7,7 +7,7 @@
 
 import UIKit
 
-class FourthViewController: UIViewController {
+class FourthViewController: UIViewController, UITextFieldDelegate {
     
     var totalAmount : String = ""
     
@@ -29,22 +29,24 @@ class FourthViewController: UIViewController {
         }
     }
     
+    @IBOutlet weak var TextField3: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        self.TextField3.delegate = self
         
         totalAmountLabel.text = "$\(totalAmount)"
 
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return TextField3.resignFirstResponder()
     }
-    */
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
+    
 
 }

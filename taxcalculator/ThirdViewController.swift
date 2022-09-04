@@ -7,7 +7,7 @@
 
 import UIKit
 
-class ThirdViewController: UIViewController {
+class ThirdViewController: UIViewController, UITextFieldDelegate {
     
     var initialAmount : String = ""
     var percentage : Double = 0.0
@@ -17,11 +17,23 @@ class ThirdViewController: UIViewController {
     @IBOutlet weak var totalAmountLabel: UILabel!
     
     
+    @IBOutlet weak var TextField2: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.TextField2.delegate = self
+        
         initialAmountLab.text = "$\(initialAmount)"
         }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return TextField2.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
+    }
         
     
     @IBAction func tipEnteredButton(_ sender: UIButton) {

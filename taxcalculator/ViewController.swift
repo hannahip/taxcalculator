@@ -7,18 +7,30 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class ViewController: UIViewController, UITextFieldDelegate {
 
 
     @IBOutlet weak var enteredAmount: UITextField!
     
     
+    @IBOutlet weak var TextField1: UITextField!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        self.TextField1.delegate = self
+        
         let textField = UITextField()
         textField.keyboardType = .numberPad
+    }
+    
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        return TextField1.resignFirstResponder()
+    }
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        self.view.endEditing(true)
     }
     
     @IBAction func suggestedTipPressed(_ sender: UIButton) {
