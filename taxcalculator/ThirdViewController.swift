@@ -22,6 +22,8 @@ class ThirdViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         self.TextField2.delegate = self
         
         initialAmountLab.text = "$\(initialAmount)"

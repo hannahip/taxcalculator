@@ -28,6 +28,8 @@ class SecondViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light 
+        
         initialAmountLabel.text = "$\(initialAmount)"
         
         let double = (initialAmount as NSString).doubleValue

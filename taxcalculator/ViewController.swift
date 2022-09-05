@@ -17,6 +17,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        overrideUserInterfaceStyle = .light 
         // Do any additional setup after loading the view.
         
         self.TextField1.delegate = self

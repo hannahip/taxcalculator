@@ -34,6 +34,8 @@ class FourthViewController: UIViewController, UITextFieldDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        overrideUserInterfaceStyle = .light
+        
         self.TextField3.delegate = self
         
         totalAmountLabel.text = "$\(totalAmount)"
